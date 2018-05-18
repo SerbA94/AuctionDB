@@ -4,11 +4,10 @@ import WoW_DBP.JsonUtils.JsonUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.io.*;
 
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         final String jsonURLGordunni = "http://auction-api-eu.worldofwarcraft.com/auction-data/4c650d6748649b4f91fdec3d2894f9f4/auctions.json";
         final String jsonURLSoulflayer = "http://auction-api-eu.worldofwarcraft.com/auction-data/f9c8b88719864bc9e16af4ba6470bb6a/auctions.json";
         GsonBuilder builder = new GsonBuilder();
