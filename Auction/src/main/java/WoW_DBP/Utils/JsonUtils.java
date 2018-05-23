@@ -1,4 +1,4 @@
-package WoW_DBP.JsonUtils;
+package WoW_DBP.Utils;
 
 
 import java.io.*;
@@ -44,8 +44,8 @@ public class JsonUtils {
     }
 
     /**Method returns JsonString from .txt file*/
-    public static String getJsonFromTxt()throws IOException{
-        BufferedReader reader = new BufferedReader(new FileReader(".\\test.txt"));
+    public static String getJsonFromTxt(String txtName)throws IOException{
+        BufferedReader reader = new BufferedReader(new FileReader(".\\"+txtName+".txt"));
         StringBuilder sb = new StringBuilder();
         String jsonStr;
 
