@@ -13,8 +13,17 @@ public class Auction {
     private Long seed;
     private Integer context;
 
+    private Integer petSpeciesId;
+    private Integer petBreedId;
+    private Integer petLevel;
+    private Integer petQualityId;
 
-    public Auction(Long auc, Long item, String owner, String ownerRealm, Long bid, Long buyout, Integer quantity, String timeLeft, Integer rand, Long seed, Integer context) {
+
+    public Auction(Long auc, Long item, String owner,
+                   String ownerRealm, Long bid, Long buyout,
+                   Integer quantity, String timeLeft, Integer rand,
+                   Long seed, Integer context, Integer petSpeciesId,
+                   Integer petBreedId, Integer petLevel, Integer petQualityId) {
         this.auc = auc;
         this.item = item;
         this.owner = owner;
@@ -26,6 +35,42 @@ public class Auction {
         this.rand = rand;
         this.seed = seed;
         this.context = context;
+        this.petSpeciesId = petSpeciesId;
+        this.petBreedId = petBreedId;
+        this.petLevel = petLevel;
+        this.petQualityId = petQualityId;
+    }
+
+    public Integer getPetSpeciesId() {
+        return petSpeciesId;
+    }
+
+    public void setPetSpeciesId(Integer petSpeciesId) {
+        this.petSpeciesId = petSpeciesId;
+    }
+
+    public Integer getPetBreedId() {
+        return petBreedId;
+    }
+
+    public void setPetBreedId(Integer petBreedId) {
+        this.petBreedId = petBreedId;
+    }
+
+    public Integer getPetLevel() {
+        return petLevel;
+    }
+
+    public void setPetLevel(Integer petLevel) {
+        this.petLevel = petLevel;
+    }
+
+    public Integer getPetQualityId() {
+        return petQualityId;
+    }
+
+    public void setPetQualityId(Integer petQualityId) {
+        this.petQualityId = petQualityId;
     }
 
     public Long getAuc() {
@@ -118,7 +163,7 @@ public class Auction {
 
     @Override
     public String toString() {
-        return "\n Auction{" +
+        return "Auction{" +
                 "auc=" + auc +
                 ", item=" + item +
                 ", owner='" + owner + '\'' +
@@ -130,6 +175,10 @@ public class Auction {
                 ", rand=" + rand +
                 ", seed=" + seed +
                 ", context=" + context +
+                ", petSpeciesId=" + petSpeciesId +
+                ", petBreedId=" + petBreedId +
+                ", petLevel=" + petLevel +
+                ", petQualityId=" + petQualityId +
                 '}';
     }
 }
