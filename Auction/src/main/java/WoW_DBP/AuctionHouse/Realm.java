@@ -1,5 +1,6 @@
 package WoW_DBP.AuctionHouse;
 
+
 public class Realm {
     private String name;
     private String slug;

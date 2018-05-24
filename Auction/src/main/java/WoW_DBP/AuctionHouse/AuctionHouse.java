@@ -1,8 +1,6 @@
 package WoW_DBP.AuctionHouse;
 
-
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class AuctionHouse {
     private ArrayList<Realm> realms;

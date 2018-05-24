@@ -1,5 +1,6 @@
 package WoW_DBP.AuctionHouse;
 
+
 public class Auction {
     private Long auc;
     private Long item;
@@ -18,12 +19,12 @@ public class Auction {
     private Integer petLevel;
     private Integer petQualityId;
 
-
     public Auction(Long auc, Long item, String owner,
                    String ownerRealm, Long bid, Long buyout,
                    Integer quantity, String timeLeft, Integer rand,
                    Long seed, Integer context, Integer petSpeciesId,
-                   Integer petBreedId, Integer petLevel, Integer petQualityId) {
+                   Integer petBreedId, Integer petLevel, Integer petQualityId)
+    {
         this.auc = auc;
         this.item = item;
         this.owner = owner;
@@ -38,38 +39,6 @@ public class Auction {
         this.petSpeciesId = petSpeciesId;
         this.petBreedId = petBreedId;
         this.petLevel = petLevel;
-        this.petQualityId = petQualityId;
-    }
-
-    public Integer getPetSpeciesId() {
-        return petSpeciesId;
-    }
-
-    public void setPetSpeciesId(Integer petSpeciesId) {
-        this.petSpeciesId = petSpeciesId;
-    }
-
-    public Integer getPetBreedId() {
-        return petBreedId;
-    }
-
-    public void setPetBreedId(Integer petBreedId) {
-        this.petBreedId = petBreedId;
-    }
-
-    public Integer getPetLevel() {
-        return petLevel;
-    }
-
-    public void setPetLevel(Integer petLevel) {
-        this.petLevel = petLevel;
-    }
-
-    public Integer getPetQualityId() {
-        return petQualityId;
-    }
-
-    public void setPetQualityId(Integer petQualityId) {
         this.petQualityId = petQualityId;
     }
 
@@ -159,6 +128,38 @@ public class Auction {
 
     public void setContext(Integer context) {
         this.context = context;
+    }
+
+    public Integer getPetSpeciesId() {
+        return petSpeciesId;
+    }
+
+    public void setPetSpeciesId(Integer petSpeciesId) {
+        this.petSpeciesId = petSpeciesId;
+    }
+
+    public Integer getPetBreedId() {
+        return petBreedId;
+    }
+
+    public void setPetBreedId(Integer petBreedId) {
+        this.petBreedId = petBreedId;
+    }
+
+    public Integer getPetLevel() {
+        return petLevel;
+    }
+
+    public void setPetLevel(Integer petLevel) {
+        this.petLevel = petLevel;
+    }
+
+    public Integer getPetQualityId() {
+        return petQualityId;
+    }
+
+    public void setPetQualityId(Integer petQualityId) {
+        this.petQualityId = petQualityId;
     }
 
     @Override

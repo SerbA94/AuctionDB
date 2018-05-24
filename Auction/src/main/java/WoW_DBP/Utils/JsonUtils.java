@@ -30,19 +30,6 @@ public class JsonUtils {
         return jsonStr;
     }
 
-
-    // Последние 2 методо созданы для тестировки, позже будут удалены
-    /**Method write JsonString to .txt file*/
-    public static void jsonFileWriter(String jsonStr)throws IOException{
-        FileWriter writer = new FileWriter(".\\test.txt", false);
-        try {
-            writer.write(jsonStr);
-            writer.flush();
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
-        }
-    }
-
     /**Method returns JsonString from .txt file*/
     public static String getJsonFromTxt(String txtName)throws IOException{
         BufferedReader reader = new BufferedReader(new FileReader(".\\"+txtName+".txt"));
