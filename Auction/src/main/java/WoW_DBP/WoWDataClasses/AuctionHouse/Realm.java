@@ -1,4 +1,4 @@
-package WoW_DBP.AuctionHouse;
+package WoW_DBP.WoWDataClasses.AuctionHouse;
 
 
 public class Realm {

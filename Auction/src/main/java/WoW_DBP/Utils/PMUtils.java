@@ -1,7 +1,7 @@
 package WoW_DBP.Utils;
 
-import WoW_DBP.AuctionHouse.Auction;
-import WoW_DBP.AuctionHouse.AuctionHouse;
+import WoW_DBP.WoWDataClasses.AuctionHouse.Auction;
+import WoW_DBP.WoWDataClasses.AuctionHouse.AuctionHouse;
 
 public class PMUtils {
 
@@ -10,7 +10,7 @@ public class PMUtils {
         Long minPrice = 999999999999999999L;
         for (Auction auction:auctionHouse.getAuctions()){
             if (auction.getItem().equals(item)){
-                if (minPrice>auction.getBuyout()){
+                if (minPrice>auction.getBuyout()&&auction.getBuyout()!=0){
                     minPrice = auction.getBuyout();
                 }
             }
@@ -28,8 +28,7 @@ public class PMUtils {
         for (Auction auction:auctionHouse.getAuctions()) {
             if (auction.getPetSpeciesId() != null) {
                 if (auction.getPetSpeciesId().equals(petSpeciesId)) {
-
-                    if (minPrice > auction.getBuyout()) {
+                    if (minPrice > auction.getBuyout()&&auction.getBuyout()!=0) {
                         minPrice = auction.getBuyout();
                     }
                 }
