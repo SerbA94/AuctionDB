@@ -19,17 +19,16 @@ public class Main {
     public static void main(String[] args) throws IOException{
         Gson gson = new Gson();
 
-      //  DBUtils.dataBuilder();
-
-/*        for (URLRepository realm: URLRepository.values()){
-            AuctionHouse auctionHouse = gson.fromJson(JsonUtils.getJsonFromTxt(realm.name()), AuctionHouse.class);
-            PMUtils.minPrice(124105L,auctionHouse);
+        DBUtils.dataBuilder();
+/*        for (RealmRepository realm: RealmRepository.values()){
+            AuctionHouse auctionHouse = gson.fromJson(JsonUtils.getJsonFromTxt(realm.getRealmName()), AuctionHouse.class);
+            PMUtils.minPrice(242,auctionHouse);
         }*/
-        Map<String,Long> realmStatus = new LinkedHashMap<String, Long>();
+/*        Map<String,Long> realmStatus = new LinkedHashMap<String, Long>();
 
         realmStatus = DBUtils.dataBuilder(realmStatus);
 
-        System.out.println(realmStatus);
+        System.out.println(realmStatus);*/
 
     }
 }
