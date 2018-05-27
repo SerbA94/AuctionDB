@@ -1,7 +1,7 @@
 package WoW_DBP.Repository;
 
 public enum RealmRepository {
- /*   GORDUNNI("gordunni"),
+    GORDUNNI("gordunni"),
     SOULFLAYER("soulflayer"),
     ASHENVALE("ashenvale"),
     AZUREGOS("azuregos"),
@@ -14,7 +14,7 @@ public enum RealmRepository {
     FORDRAGON("fordragon"),
     GALAKROND("galakrond"),
     GOLDRINN("goldrinn"),
-    LICHKING("lich%20king"), //Greymane*/
+    LICHKING("lich%20king"), //Greymane
     GROM("grom"), //Thermaplugg
     HOWLINGFJORD("howling%20fjord");
 
