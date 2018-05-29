@@ -32,7 +32,7 @@ public class JsonUtils {
 
     /**Method returns JsonString from .txt file*/
     public static String getJsonFromTxt(String txtName)throws IOException{
-        BufferedReader reader = new BufferedReader(new FileReader(".\\"+txtName+".txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\realpop\\Desktop\\WoW_AH_DB\\"+txtName+".txt"));
         StringBuilder sb = new StringBuilder();
         String jsonStr;
 

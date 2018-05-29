@@ -2,9 +2,9 @@ package WoW_DBP.WoWDataClasses.AuctionDataStatus;
 
 public class File {
     private String url;
-    private Long lastModified;
+    private long lastModified;
 
-    public File(String url, Long lastModified) {
+    public File(String url, long lastModified) {
         this.url = url;
         this.lastModified = lastModified;
     }
@@ -17,7 +17,7 @@ public class File {
         this.url = url;
     }
 
-    public Long getLastModified() {
+    public long getLastModified() {
         return lastModified;
     }
 

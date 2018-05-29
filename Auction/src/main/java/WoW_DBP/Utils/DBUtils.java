@@ -33,12 +33,12 @@ public class DBUtils {
                                             + "?locale=en_GB&apikey=q5h4rm4w22vdxqzuajr3h9vhp547d9t4")
                             ,AuctionDataStatus.class);
 
-            if (!realmStatus.get(realm.getRealmName()).getFiles().get(0).getLastModified().equals(auctionDataStatus.getFiles().get(0).getLastModified())) {
+            if (realmStatus.get(realm.getRealmName()).getFiles().get(0).getLastModified()!=auctionDataStatus.getFiles().get(0).getLastModified()) {
 
                 realmStatus.put(realm.getRealmName(), auctionDataStatus);
                 System.out.println(realm.getRealmName() + " realm status updated.");
 
-                File file = new File(".\\" + realm.getRealmName() + ".txt");
+                File file = new File("C:\\Users\\realpop\\Desktop\\WoW_AH_DB\\" + realm.getRealmName() + ".txt");
                 if (!file.exists()) {
                     file.createNewFile();
                     System.out.println("File: " + realm.getRealmName() + ".txt successfully created.");
@@ -64,7 +64,7 @@ public class DBUtils {
      *  (если таков файл отсутствует функция его создает)
      *  затем переносит эту информацию в Map по которой в дальнейшем
      *  ведется мониоринг и обновления данных.*/
-    private static Map<String,AuctionDataStatus> RSMapBuilder() throws IOException{
+    public static Map<String,AuctionDataStatus> RSMapBuilder() throws IOException{
         Map<String,AuctionDataStatus> realmStatus = new LinkedHashMap<String, AuctionDataStatus>();
         Gson gson = new Gson();
         File rStatus = new File(".\\rStatus.txt");

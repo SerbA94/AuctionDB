@@ -20,11 +20,11 @@ import java.util.concurrent.TimeUnit;
 public class Main {
     public static void main(String[] args) throws IOException{
         Gson gson = new Gson();
-        DBUtils.dataBuilder();
-/*        for (RealmRepository realm: RealmRepository.values()){
+         DBUtils.dataBuilder();
+        for (RealmRepository realm: RealmRepository.values()){
             AuctionHouse auctionHouse = gson.fromJson(JsonUtils.getJsonFromTxt(realm.getRealmName()), AuctionHouse.class);
             PMUtils.minPrice(242,auctionHouse);
-        }*/
+        }
 /*        Map<String,Long> realmStatus = new LinkedHashMap<String, Long>();
 
         realmStatus = DBUtils.dataBuilder(realmStatus);
@@ -38,6 +38,7 @@ public class Main {
             AuctionDataStatus auctionDataStatus = gson.fromJson(line, AuctionDataStatus.class);
             System.out.println(auctionDataStatus);
         }*/
+
 
 
     }
